@@ -581,7 +581,7 @@ contract Verifier {
             uint[2][2] memory beta,
             uint[2][2] memory gamma,
             uint[2][2] memory delta,
-            uint[3][2] memory gamma_abc
+            uint[2][3] memory gamma_abc
         ) public returns (bool r) {
         Proof memory proof;
         proof.a = Pairing.G1Point(a[0], a[1]);
