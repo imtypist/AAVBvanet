@@ -28,18 +28,18 @@ CertGen(msk, pk) -> cert
 KeyGen() ->  (proof.key, verification.key)
 ```
 
-- Vehicles prove message `m` and pseudo random address `id`
+- Vehicles prove message `m` and pseudo random address `ppk`
 
 ```
-Auth(id||m, sk, pk, cert, mpk, proof.key) -> (id||m, pi=(t, η))
+Auth(ppk||m, mpk, sk, pk, cert, proof.key) -> (ppk||m, mpk, pi=(t, η))
 ```
 
-where `t=Enc_mpk(pk||cert||id||m)`, `η` is the zkSNARKs proof.
+where `t=Enc_mpk(pk||ppk||m)`, `η` is the zkSNARKs proof.
 
 - RSUs verify the proof
 
 ```
-Verify(id||m, t, η, verification.key) -> {0, 1}
+Verify(ppk||m, mpk, pi, verification.key) -> {0, 1}
 ```
 
 - RA can reveal the real identity of vehicles by decrypting `t`
