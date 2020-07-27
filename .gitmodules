@@ -1,0 +1,9 @@
+[submodule "jsnark"]
+	path = jsnark
+	url = https://github.com/imtypist/jsnark
+[submodule "group-signature-interface"]
+	path = group-signature-interface
+	url = https://github.com/imtypist/group-signature-interface
+[submodule "group-signature-server"]
+	path = group-signature-server
+	url = https://github.com/imtypist/group-signature-server
