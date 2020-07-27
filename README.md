@@ -91,8 +91,8 @@ Circuit Evaluation Done for < vanet_rsa2048 >
 
 > Note that maximum ring size is hard coded as 32 in [FISCO-BCOS/group-signature-server](https://github.com/FISCO-BCOS/group-signature-server/). Here I set it to 1024 for testing a larger ring size. You can change it by yourselves.
 
-- [test_revoke_member_1024.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_1024.log)
-- [test_revoke_member_512.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_512.log)
+- [test_revoke_member_1024.log (partial)](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_1024.log)
+- [test_revoke_member_512.log (partial)](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_512.log)
 - [test_revoke_member_256.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_256.log)
 - [test_revoke_member_64.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_64.log)
 - [test_revoke_member_32.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_32.log)
