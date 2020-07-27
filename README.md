@@ -54,9 +54,9 @@ Verify(ppk||m, mpk, pi, verification.key) -> {0, 1}
 
 The RSA key length is set to 2048 bits, which is safe enough currently.
 
-- [rsa2048_encryption.log](https://github.com/imtypist/jsnark/rsa2048_encryption.log)
-- [rsa2048_sha256_sig_verify.log](https://github.com/imtypist/jsnark/rsa2048_sha256_sig_verify.log)
-- [vanet_rsa2048.log](https://github.com/imtypist/jsnark/vanet_rsa2048.log)
+- [rsa2048_encryption.log](https://github.com/imtypist/jsnark/blob/master/rsa2048_encryption.log)
+- [rsa2048_sha256_sig_verify.log](https://github.com/imtypist/jsnark/blob/master/rsa2048_sha256_sig_verify.log)
+- [vanet_rsa2048.log](https://github.com/imtypist/jsnark/blob/master/vanet_rsa2048.log)
 
 [VANETCircuitGenerator](https://github.com/imtypist/jsnark/blob/master/JsnarkCircuitBuilder/src/examples/generators/rsa/VANETCircuitGenerator.java) is the circuit generator code of VANET.
 
@@ -86,15 +86,15 @@ Circuit Evaluation Done for < vanet_rsa2048 >
 
 #### group/ring signature
 
-- [test_group_signature.log](./test_group_signature.log)
-- [test_ring_signature.log](./test_ring_signature.log)
+- [test_group_signature.log](https://github.com/imtypist/group-signature-interface/blob/master/test_group_signature.log)
+- [test_ring_signature.log](https://github.com/imtypist/group-signature-interface/blob/master/test_ring_signature.log)
 
 > Note that maximum ring size is hard coded as 32 in [FISCO-BCOS/group-signature-server](https://github.com/FISCO-BCOS/group-signature-server/). Here I set it to 1024 for testing a larger ring size. You can change it by yourselves.
 
-- [test_revoke_member_1024.log](https://github.com/imtypist/group-signature-interface/test_revoke_member_1024.log)
-- [test_revoke_member_512.log](https://github.com/imtypist/group-signature-interface/test_revoke_member_512.log)
-- [test_revoke_member_256.log](https://github.com/imtypist/group-signature-interface/test_revoke_member_256.log)
-- [test_revoke_member_64.log](https://github.com/imtypist/group-signature-interface/test_revoke_member_64.log)
-- [test_revoke_member_32.log](https://github.com/imtypist/group-signature-interface/test_revoke_member_32.log)
+- [test_revoke_member_1024.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_1024.log)
+- [test_revoke_member_512.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_512.log)
+- [test_revoke_member_256.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_256.log)
+- [test_revoke_member_64.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_64.log)
+- [test_revoke_member_32.log](https://github.com/imtypist/group-signature-interface/blob/master/test_revoke_member_32.log)
 
 In this experiment result, I added the performance of `revoke` and `update member private key` operations. To achieve that, I implemented `revoke_member` and `revoke_update_private_key` RPC interfaces, which are not yet implemented in the original repository. If you want to use them directly, you can git clone from [imtypist/group-signature-server](https://github.com/imtypist/group-signature-server).
